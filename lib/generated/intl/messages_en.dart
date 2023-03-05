@@ -22,11 +22,18 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "btncalcu": MessageLookupByLibrary.simpleMessage("Calculate"),
         "btnlogin": MessageLookupByLibrary.simpleMessage("Log in"),
         "inicio": MessageLookupByLibrary.simpleMessage("Home"),
+        "inputpass": MessageLookupByLibrary.simpleMessage("Password"),
+        "inputuser": MessageLookupByLibrary.simpleMessage("Email"),
+        "labelecu": MessageLookupByLibrary.simpleMessage("Quadratic equation"),
+        "labelfibona": MessageLookupByLibrary.simpleMessage("Fibonacci"),
+        "labelmcdandmcm": MessageLookupByLibrary.simpleMessage("MCD and MCM"),
         "mat1": MessageLookupByLibrary.simpleMessage("Math"),
         "mat2": MessageLookupByLibrary.simpleMessage("Physical"),
         "mat3": MessageLookupByLibrary.simpleMessage("Statistics"),
-        "menslogin": MessageLookupByLibrary.simpleMessage("Successful session")
+        "menslogin": MessageLookupByLibrary.simpleMessage("Successful session"),
+        "mensoption": MessageLookupByLibrary.simpleMessage("Options")
       };
 }

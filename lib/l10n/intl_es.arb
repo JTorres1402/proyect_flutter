@@ -4,5 +4,12 @@
     "mat3":"Estadística",
     "inicio":"Inicio",
     "btnlogin":"Iniciar sesion",
-    "menslogin":"Sesion exitosa"
+    "menslogin":"Sesion exitosa",
+    "mensoption":"Opciones",
+    "inputpass": "Contraseña",
+    "inputuser": "Correo",
+    "btncalcu":"Calcular",
+    "labelmcdandmcm":"MCD y MCM",
+    "labelecu":"Ecuación cuadrática",
+    "labelfibona":"Fibonacci"
 }

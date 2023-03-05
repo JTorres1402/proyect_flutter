@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
         text: AppLocalizations.of(context).inicio,
       ),
       body: BackgroundImage(
-        imageUrl: 'https://wallpaperaccess.com/full/1188394.jpg',
+        imageUrl: 'assets/image/background.jpg',
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,

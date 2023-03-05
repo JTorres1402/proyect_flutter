@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:taller/generated/l10n.dart';
 
 class AppBarHome extends StatelessWidget with PreferredSizeWidget {
   final String text;
@@ -10,29 +10,37 @@ class AppBarHome extends StatelessWidget with PreferredSizeWidget {
         super(key: key);
   @override
   Widget build(BuildContext context) {
-    const primaryColor = Color(0xff4338CA);
-    const secondaryColor = Color(0xff6D28D9);
-
     return AppBar(
       automaticallyImplyLeading: false,
       title:
           Text(text, style: const TextStyle(color: Colors.white, fontSize: 25)),
-      backgroundColor: primaryColor,
+      backgroundColor: const Color(0xff1f005c),
       actions: [
         IconButton(
           icon: const Icon(Icons.more_vert_rounded),
           tooltip: 'Option',
           onPressed: () {
-            ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('This is a snackbar')));
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                content: Text(AppLocalizations.of(context).mensoption)));
           },
         ),
       ],
       flexibleSpace: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [primaryColor, secondaryColor],
-            stops: [0.5, 1.0],
+            begin: Alignment.topLeft,
+            end: Alignment(0.8, 1),
+            colors: [
+              Color(0xff5029ff),
+              Color(0xff4b21e6),
+              Color(0xff451acd),
+              Color(0xff3e13b5),
+              Color(0xff370d9d),
+              Color(0xff2f0687),
+              Color(0xff270271),
+              Color(0xff1f005c),
+            ],
+            tileMode: TileMode.clamp,
           ),
         ),
       ),

@@ -109,6 +109,76 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Options`
+  String get mensoption {
+    return Intl.message(
+      'Options',
+      name: 'mensoption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get inputpass {
+    return Intl.message(
+      'Password',
+      name: 'inputpass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get inputuser {
+    return Intl.message(
+      'Email',
+      name: 'inputuser',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Calculate`
+  String get btncalcu {
+    return Intl.message(
+      'Calculate',
+      name: 'btncalcu',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `MCD and MCM`
+  String get labelmcdandmcm {
+    return Intl.message(
+      'MCD and MCM',
+      name: 'labelmcdandmcm',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quadratic equation`
+  String get labelecu {
+    return Intl.message(
+      'Quadratic equation',
+      name: 'labelecu',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fibonacci`
+  String get labelfibona {
+    return Intl.message(
+      'Fibonacci',
+      name: 'labelfibona',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {
