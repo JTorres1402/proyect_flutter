@@ -100,6 +100,46 @@ class AppLocalizations {
     );
   }
 
+  /// `Calculate`
+  String get btncalcu {
+    return Intl.message(
+      'Calculate',
+      name: 'btncalcu',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add`
+  String get btnadd {
+    return Intl.message(
+      'Add',
+      name: 'btnadd',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add resistance`
+  String get btnaddr {
+    return Intl.message(
+      'Add resistance',
+      name: 'btnaddr',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sesion`
+  String get labeluser {
+    return Intl.message(
+      'Sesion',
+      name: 'labeluser',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Successful session`
   String get menslogin {
     return Intl.message(
@@ -140,11 +180,31 @@ class AppLocalizations {
     );
   }
 
-  /// `Calculate`
-  String get btncalcu {
+  /// ` is: `
+  String get isEs {
     return Intl.message(
-      'Calculate',
-      name: 'btncalcu',
+      ' is: ',
+      name: 'isEs',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `and`
+  String get andY {
+    return Intl.message(
+      'and',
+      name: 'andY',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quadratic equation`
+  String get labelequa {
+    return Intl.message(
+      'Quadratic equation',
+      name: 'labelequa',
       desc: '',
       args: [],
     );
@@ -160,21 +220,151 @@ class AppLocalizations {
     );
   }
 
-  /// `Quadratic equation`
-  String get labelecu {
-    return Intl.message(
-      'Quadratic equation',
-      name: 'labelecu',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Fibonacci`
   String get labelfibona {
     return Intl.message(
       'Fibonacci',
       name: 'labelfibona',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Result quadratic equations`
+  String get resultequa {
+    return Intl.message(
+      'Result quadratic equations',
+      name: 'resultequa',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `MCD result`
+  String get resultmcd {
+    return Intl.message(
+      'MCD result',
+      name: 'resultmcd',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `MCM result`
+  String get resultmcm {
+    return Intl.message(
+      'MCM result',
+      name: 'resultmcm',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fibonacci result`
+  String get resultfibona {
+    return Intl.message(
+      'Fibonacci result',
+      name: 'resultfibona',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Parabolic throw distance`
+  String get labelparabolic {
+    return Intl.message(
+      'Parabolic throw distance',
+      name: 'labelparabolic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Current intensity`
+  String get labelIC {
+    return Intl.message(
+      'Current intensity',
+      name: 'labelIC',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Force exerted on a body`
+  String get labelforcebody {
+    return Intl.message(
+      'Force exerted on a body',
+      name: 'labelforcebody',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Parabolic shot distance result`
+  String get resultparaboli {
+    return Intl.message(
+      'Parabolic shot distance result',
+      name: 'resultparaboli',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Current intensity result`
+  String get resultIC {
+    return Intl.message(
+      'Current intensity result',
+      name: 'resultIC',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Result of force exerted on a body`
+  String get resultforcebody {
+    return Intl.message(
+      'Result of force exerted on a body',
+      name: 'resultforcebody',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The average`
+  String get resultaverage {
+    return Intl.message(
+      'The average',
+      name: 'resultaverage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The variance`
+  String get resultvariance {
+    return Intl.message(
+      'The variance',
+      name: 'resultvariance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The statistical mode`
+  String get resultmode {
+    return Intl.message(
+      'The statistical mode',
+      name: 'resultmode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Entered data`
+  String get data {
+    return Intl.message(
+      'Entered data',
+      name: 'data',
       desc: '',
       args: [],
     );

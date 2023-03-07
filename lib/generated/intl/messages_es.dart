@@ -22,18 +22,46 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "andY": MessageLookupByLibrary.simpleMessage("y"),
+        "btnadd": MessageLookupByLibrary.simpleMessage("Agregar"),
+        "btnaddr": MessageLookupByLibrary.simpleMessage("Agregar resistencia"),
         "btncalcu": MessageLookupByLibrary.simpleMessage("Calcular"),
         "btnlogin": MessageLookupByLibrary.simpleMessage("Iniciar sesion"),
+        "data": MessageLookupByLibrary.simpleMessage("Datos ingresados"),
         "inicio": MessageLookupByLibrary.simpleMessage("Inicio"),
         "inputpass": MessageLookupByLibrary.simpleMessage("Contraseña"),
         "inputuser": MessageLookupByLibrary.simpleMessage("Correo"),
-        "labelecu": MessageLookupByLibrary.simpleMessage("Ecuación cuadrática"),
+        "isEs": MessageLookupByLibrary.simpleMessage(" es: "),
+        "labelIC":
+            MessageLookupByLibrary.simpleMessage("Intensidad de corriente"),
+        "labelequa":
+            MessageLookupByLibrary.simpleMessage("Ecuación cuadrática"),
         "labelfibona": MessageLookupByLibrary.simpleMessage("Fibonacci"),
+        "labelforcebody":
+            MessageLookupByLibrary.simpleMessage("Fuerza ejercida a un cuerpo"),
         "labelmcdandmcm": MessageLookupByLibrary.simpleMessage("MCD y MCM"),
+        "labelparabolic":
+            MessageLookupByLibrary.simpleMessage("Distancia tiro parabólico"),
+        "labeluser": MessageLookupByLibrary.simpleMessage("Sesion"),
         "mat1": MessageLookupByLibrary.simpleMessage("Matemáticas"),
         "mat2": MessageLookupByLibrary.simpleMessage("Física"),
         "mat3": MessageLookupByLibrary.simpleMessage("Estadística"),
         "menslogin": MessageLookupByLibrary.simpleMessage("Sesion exitosa"),
-        "mensoption": MessageLookupByLibrary.simpleMessage("Opciones")
+        "mensoption": MessageLookupByLibrary.simpleMessage("Opciones"),
+        "resultIC": MessageLookupByLibrary.simpleMessage(
+            "Resultado de intensidad de corriente"),
+        "resultaverage": MessageLookupByLibrary.simpleMessage("La media"),
+        "resultequa": MessageLookupByLibrary.simpleMessage(
+            "Resultado ecuación cuadrática"),
+        "resultfibona":
+            MessageLookupByLibrary.simpleMessage("Resultado de fibonacci"),
+        "resultforcebody": MessageLookupByLibrary.simpleMessage(
+            "Resultado de fuerza ejercida a un cuerpo"),
+        "resultmcd": MessageLookupByLibrary.simpleMessage("Resultado de MCD"),
+        "resultmcm": MessageLookupByLibrary.simpleMessage("Resultado de MCM"),
+        "resultmode": MessageLookupByLibrary.simpleMessage("La moda"),
+        "resultparaboli": MessageLookupByLibrary.simpleMessage(
+            "Resultado de distancia tiro parabólico"),
+        "resultvariance": MessageLookupByLibrary.simpleMessage("La varianza")
       };
 }

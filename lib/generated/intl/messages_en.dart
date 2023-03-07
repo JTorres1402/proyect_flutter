@@ -22,18 +22,45 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "andY": MessageLookupByLibrary.simpleMessage("and"),
+        "btnadd": MessageLookupByLibrary.simpleMessage("Add"),
+        "btnaddr": MessageLookupByLibrary.simpleMessage("Add resistance"),
         "btncalcu": MessageLookupByLibrary.simpleMessage("Calculate"),
         "btnlogin": MessageLookupByLibrary.simpleMessage("Log in"),
+        "data": MessageLookupByLibrary.simpleMessage("Entered data"),
         "inicio": MessageLookupByLibrary.simpleMessage("Home"),
         "inputpass": MessageLookupByLibrary.simpleMessage("Password"),
         "inputuser": MessageLookupByLibrary.simpleMessage("Email"),
-        "labelecu": MessageLookupByLibrary.simpleMessage("Quadratic equation"),
+        "isEs": MessageLookupByLibrary.simpleMessage(" is: "),
+        "labelIC": MessageLookupByLibrary.simpleMessage("Current intensity"),
+        "labelequa": MessageLookupByLibrary.simpleMessage("Quadratic equation"),
         "labelfibona": MessageLookupByLibrary.simpleMessage("Fibonacci"),
+        "labelforcebody":
+            MessageLookupByLibrary.simpleMessage("Force exerted on a body"),
         "labelmcdandmcm": MessageLookupByLibrary.simpleMessage("MCD and MCM"),
+        "labelparabolic":
+            MessageLookupByLibrary.simpleMessage("Parabolic throw distance"),
+        "labeluser": MessageLookupByLibrary.simpleMessage("Sesion"),
         "mat1": MessageLookupByLibrary.simpleMessage("Math"),
         "mat2": MessageLookupByLibrary.simpleMessage("Physical"),
         "mat3": MessageLookupByLibrary.simpleMessage("Statistics"),
         "menslogin": MessageLookupByLibrary.simpleMessage("Successful session"),
-        "mensoption": MessageLookupByLibrary.simpleMessage("Options")
+        "mensoption": MessageLookupByLibrary.simpleMessage("Options"),
+        "resultIC":
+            MessageLookupByLibrary.simpleMessage("Current intensity result"),
+        "resultaverage": MessageLookupByLibrary.simpleMessage("The average"),
+        "resultequa":
+            MessageLookupByLibrary.simpleMessage("Result quadratic equations"),
+        "resultfibona":
+            MessageLookupByLibrary.simpleMessage("Fibonacci result"),
+        "resultforcebody": MessageLookupByLibrary.simpleMessage(
+            "Result of force exerted on a body"),
+        "resultmcd": MessageLookupByLibrary.simpleMessage("MCD result"),
+        "resultmcm": MessageLookupByLibrary.simpleMessage("MCM result"),
+        "resultmode":
+            MessageLookupByLibrary.simpleMessage("The statistical mode"),
+        "resultparaboli": MessageLookupByLibrary.simpleMessage(
+            "Parabolic shot distance result"),
+        "resultvariance": MessageLookupByLibrary.simpleMessage("The variance")
       };
 }

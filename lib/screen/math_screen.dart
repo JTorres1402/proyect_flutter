@@ -1,9 +1,8 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:taller/widget/widget.dart';
 
 import '../generated/l10n.dart';
+import '../logic/math_logic.dart';
 
 class MathScreen extends StatefulWidget {
   const MathScreen({super.key});
@@ -13,12 +12,28 @@ class MathScreen extends StatefulWidget {
 }
 
 class _MathScreenState extends State<MathScreen> {
-  final ecu = Ecuaciones();
-  late String input1, input2;
-  int num1 = 0, num2 = 0;
-  void _state() {
+  final mcdmcm = MCDMCM();
+  late String input1, input2, input3, input4, input5, input6;
+  int num1 = 0, num2 = 0, num4 = 0, num5 = 0, num6 = 0;
+  double num3 = 0;
+  void _stateEcu() {
     setState(() {
-      ecu.mcd;
+      controlador1.clear();
+      controlador2.clear();
+      controlador3.clear();
+    });
+  }
+
+  void _stateMcdmcm() {
+    setState(() {
+      mcdmcm.mcd;
+    });
+  }
+
+  void _stateFib() {
+    setState(() {
+      fibo.clear();
+      controlador6.clear();
     });
   }
 
@@ -31,7 +46,6 @@ class _MathScreenState extends State<MathScreen> {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return DefaultTabController(
       initialIndex: 0,
@@ -90,7 +104,7 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 9) / 100,
                     ),
                     Text(
-                      AppLocalizations.of(context).labelecu,
+                      AppLocalizations.of(context).labelequa,
                       style: const TextStyle(
                           fontSize: 30, fontWeight: FontWeight.bold),
                     ),
@@ -98,7 +112,26 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      controller: controlador3,
+                      decoration: const InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff3e13b5), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff5029ff), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.black, width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                      ),
+                      controller: controlador1,
                       keyboardType: TextInputType.number,
                       onChanged: (value) => {
                         input1 = value,
@@ -108,10 +141,58 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 4) / 100,
                     ),
                     TextField(
-                      controller: controlador4,
+                      decoration: const InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff3e13b5), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff5029ff), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.black, width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                      ),
+                      controller: controlador2,
                       keyboardType: TextInputType.number,
                       onChanged: (value) => {
                         input2 = value,
+                      },
+                    ),
+                    SizedBox(
+                      height: (height * 4) / 100,
+                    ),
+                    TextField(
+                      decoration: const InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff3e13b5), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff5029ff), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.black, width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                      ),
+                      controller: controlador3,
+                      keyboardType: TextInputType.number,
+                      onChanged: (value) => {
+                        input3 = value,
                       },
                     ),
                     SizedBox(
@@ -119,7 +200,29 @@ class _MathScreenState extends State<MathScreen> {
                     ),
                     GradientButton(
                       text: AppLocalizations.of(context).btncalcu,
-                      onPressed: () => {},
+                      onPressed: () => {
+                        num1 = int.parse(input1),
+                        num2 = int.parse(input2),
+                        num3 = double.parse(input3),
+                        ecuacion(num1, num2, num3),
+                        showDialog<String>(
+                          context: context,
+                          builder: (BuildContext context) => AlertDialog(
+                            title:
+                                Text(AppLocalizations.of(context).resultequa),
+                            content: Text(
+                              '${AppLocalizations.of(context).resultequa}${AppLocalizations.of(context).isEs} \nX1 $ecuX1\nX2 $ecuX2',
+                            ),
+                            actions: <Widget>[
+                              TextButton(
+                                onPressed: () => Navigator.pop(context, 'OK'),
+                                child: const Text('OK'),
+                              ),
+                            ],
+                          ),
+                        ),
+                        _stateEcu(),
+                      },
                     ),
                   ],
                 ),
@@ -144,20 +247,58 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      controller: controlador3,
+                      decoration: const InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff3e13b5), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff5029ff), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.black, width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                      ),
+                      controller: controlador4,
                       keyboardType: TextInputType.number,
                       onChanged: (value) => {
-                        input1 = value,
+                        input4 = value,
                       },
                     ),
                     SizedBox(
                       height: (height * 4) / 100,
                     ),
                     TextField(
-                      controller: controlador4,
+                      decoration: const InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff3e13b5), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff5029ff), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.black, width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                      ),
+                      controller: controlador5,
                       keyboardType: TextInputType.number,
                       onChanged: (value) => {
-                        input2 = value,
+                        input5 = value,
                       },
                     ),
                     SizedBox(
@@ -166,27 +307,19 @@ class _MathScreenState extends State<MathScreen> {
                     GradientButton(
                       text: AppLocalizations.of(context).btncalcu,
                       onPressed: () => {
-                        if (input1 != null || input2 != null)
-                          {
-                            num1 = int.parse(input1),
-                            num2 = int.parse(input2),
-                            ecu.num1 = num1,
-                            ecu.num2 = num2,
-                            controlador3.clear(),
-                            controlador4.clear()
-                          },
+                        num4 = int.parse(input4),
+                        num5 = int.parse(input5),
+                        mcdmcm.num1 = num4,
+                        mcdmcm.num2 = num5,
+                        controlador4.clear(),
+                        controlador5.clear(),
                         showDialog<String>(
                           context: context,
                           builder: (BuildContext context) => AlertDialog(
-                            title: const Text('Resultado MCM'),
-                            content:
-                                Text('MCM de $input1 y $input2 es ${ecu.mcm}'),
+                            title: Text(AppLocalizations.of(context).resultmcm),
+                            content: Text(
+                                '${AppLocalizations.of(context).resultmcm} $input4 ${AppLocalizations.of(context).andY} $input5${AppLocalizations.of(context).isEs}${mcdmcm.mcm}'),
                             actions: <Widget>[
-                              TextButton(
-                                onPressed: () =>
-                                    Navigator.pop(context, 'Cancel'),
-                                child: const Text('Cancel'),
-                              ),
                               TextButton(
                                 onPressed: () => Navigator.pop(context, 'OK'),
                                 child: const Text('OK'),
@@ -197,15 +330,10 @@ class _MathScreenState extends State<MathScreen> {
                         showDialog<String>(
                           context: context,
                           builder: (BuildContext context) => AlertDialog(
-                            title: const Text('Resultado MCD'),
-                            content:
-                                Text('MCD de $input1 y $input2 es ${ecu.mcd}'),
+                            title: Text(AppLocalizations.of(context).resultmcd),
+                            content: Text(
+                                '${AppLocalizations.of(context).resultmcd} $input1 ${AppLocalizations.of(context).andY} $input2${AppLocalizations.of(context).isEs}${mcdmcm.mcd}'),
                             actions: <Widget>[
-                              TextButton(
-                                onPressed: () =>
-                                    Navigator.pop(context, 'Cancel'),
-                                child: const Text('Cancel'),
-                              ),
                               TextButton(
                                 onPressed: () => Navigator.pop(context, 'OK'),
                                 child: const Text('OK'),
@@ -213,7 +341,7 @@ class _MathScreenState extends State<MathScreen> {
                             ],
                           ),
                         ),
-                        _state(),
+                        _stateMcdmcm,
                       },
                     ),
                   ],
@@ -239,20 +367,29 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      controller: controlador3,
+                      decoration: const InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff3e13b5), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Color(0xff5029ff), width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.black, width: 1.5),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                      ),
+                      controller: controlador6,
                       keyboardType: TextInputType.number,
                       onChanged: (value) => {
-                        input1 = value,
-                      },
-                    ),
-                    SizedBox(
-                      height: (height * 4) / 100,
-                    ),
-                    TextField(
-                      controller: controlador4,
-                      keyboardType: TextInputType.number,
-                      onChanged: (value) => {
-                        input2 = value,
+                        input6 = value,
                       },
                     ),
                     SizedBox(
@@ -260,7 +397,35 @@ class _MathScreenState extends State<MathScreen> {
                     ),
                     GradientButton(
                       text: AppLocalizations.of(context).btncalcu,
-                      onPressed: () => {},
+                      onPressed: () => {
+                        if (input6 != '')
+                          {
+                            num6 = int.parse(input6),
+                            fibonacci(num6),
+                          },
+
+                        //fib.n = num5,
+                        showDialog<String>(
+                          context: context,
+                          builder: (BuildContext context) => AlertDialog(
+                            title:
+                                Text(AppLocalizations.of(context).resultfibona),
+                            content: Text(
+                                '${AppLocalizations.of(context).resultfibona}'
+                                ' $input6'
+                                '${AppLocalizations.of(context).isEs}\n$fibo'),
+                            actions: <Widget>[
+                              TextButton(
+                                onPressed: () => {
+                                  Navigator.pop(context, 'OK'),
+                                  _stateFib(),
+                                },
+                                child: const Text('OK'),
+                              ),
+                            ],
+                          ),
+                        ),
+                      },
                     ),
                   ],
                 ),
@@ -270,47 +435,5 @@ class _MathScreenState extends State<MathScreen> {
         ),
       ),
     );
-  }
-}
-
-class Ecuaciones {
-  int? num1;
-  int? num2;
-
-  static int MCD(int a, int b) {
-    int temporal; //Para no perder b
-    while (b != 0) {
-      temporal = b;
-      b = a % b;
-      a = temporal;
-    }
-    return a;
-  }
-
-  num get mcd {
-    if (num1 == null || num2 == null) {
-      return 0;
-    } else {
-      int a = min(num1!, num2!);
-      int b = max(num1!, num2!);
-
-      int resultado = 0;
-      do {
-        resultado = b;
-        b = a % b;
-        a = resultado;
-      } while (b != 0);
-      return resultado;
-    }
-  }
-
-  num get mcm {
-    if (num1 == null || num2 == null) {
-      return 0;
-    } else {
-      int a = num1!;
-      int b = num2!;
-      return (num1! * num2!) / MCD(a, b);
-    }
   }
 }
