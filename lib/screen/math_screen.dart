@@ -112,20 +112,21 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labela,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -141,20 +142,21 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 4) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labelb,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -170,20 +172,21 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 4) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labelc,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -247,20 +250,21 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labela,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -276,20 +280,21 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 4) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labelb,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -367,20 +372,21 @@ class _MathScreenState extends State<MathScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labelfibona,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),

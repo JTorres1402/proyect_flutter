@@ -33,12 +33,20 @@ class MessageLookup extends MessageLookupByLibrary {
         "inputuser": MessageLookupByLibrary.simpleMessage("Email"),
         "isEs": MessageLookupByLibrary.simpleMessage(" is: "),
         "labelIC": MessageLookupByLibrary.simpleMessage("Current intensity"),
+        "labelVolt": MessageLookupByLibrary.simpleMessage("Voltage"),
+        "labela": MessageLookupByLibrary.simpleMessage("A"),
+        "labelacce": MessageLookupByLibrary.simpleMessage("Acceleration"),
         "labeladdres": MessageLookupByLibrary.simpleMessage("Url address"),
+        "labelangle": MessageLookupByLibrary.simpleMessage("Angle"),
+        "labelb": MessageLookupByLibrary.simpleMessage("B"),
+        "labelc": MessageLookupByLibrary.simpleMessage("C"),
         "labelcontribu": MessageLookupByLibrary.simpleMessage("Contribution"),
+        "labeldata": MessageLookupByLibrary.simpleMessage("Data"),
         "labelequa": MessageLookupByLibrary.simpleMessage("Quadratic equation"),
         "labelfibona": MessageLookupByLibrary.simpleMessage("Fibonacci"),
         "labelforcebody":
             MessageLookupByLibrary.simpleMessage("Force exerted on a body"),
+        "labelmass": MessageLookupByLibrary.simpleMessage("Mass"),
         "labelmcdandmcm": MessageLookupByLibrary.simpleMessage("MCD and MCM"),
         "labelnamepers": MessageLookupByLibrary.simpleMessage("Name"),
         "labelnamepla":
@@ -46,6 +54,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "labelnanatio": MessageLookupByLibrary.simpleMessage("Nationality"),
         "labelparabolic":
             MessageLookupByLibrary.simpleMessage("Parabolic throw distance"),
+        "labelspeed": MessageLookupByLibrary.simpleMessage("Speed"),
         "labeluser": MessageLookupByLibrary.simpleMessage("Sesion"),
         "mat1": MessageLookupByLibrary.simpleMessage("Math"),
         "mat2": MessageLookupByLibrary.simpleMessage("Physical"),

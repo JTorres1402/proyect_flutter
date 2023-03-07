@@ -103,20 +103,21 @@ class _PhysiScreenState extends State<PhysiScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labelspeed,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -132,20 +133,21 @@ class _PhysiScreenState extends State<PhysiScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labelangle,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -239,20 +241,21 @@ class _PhysiScreenState extends State<PhysiScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labelVolt,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -328,20 +331,21 @@ class _PhysiScreenState extends State<PhysiScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labelmass,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -357,20 +361,21 @@ class _PhysiScreenState extends State<PhysiScreen> {
                       height: (height * 3) / 100,
                     ),
                     TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context).labelacce,
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
+                        border: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff3e13b5), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xff5029ff), width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
-                        enabledBorder: OutlineInputBorder(
+                        enabledBorder: const OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.black, width: 1.5),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),

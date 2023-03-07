@@ -34,13 +34,21 @@ class MessageLookup extends MessageLookupByLibrary {
         "isEs": MessageLookupByLibrary.simpleMessage(" es: "),
         "labelIC":
             MessageLookupByLibrary.simpleMessage("Intensidad de corriente"),
+        "labelVolt": MessageLookupByLibrary.simpleMessage("Voltaje "),
+        "labela": MessageLookupByLibrary.simpleMessage("A"),
+        "labelacce": MessageLookupByLibrary.simpleMessage("Aceleración"),
         "labeladdres": MessageLookupByLibrary.simpleMessage("Direccion Url"),
+        "labelangle": MessageLookupByLibrary.simpleMessage("Angulo"),
+        "labelb": MessageLookupByLibrary.simpleMessage("B"),
+        "labelc": MessageLookupByLibrary.simpleMessage("C"),
         "labelcontribu": MessageLookupByLibrary.simpleMessage("Contribución"),
+        "labeldata": MessageLookupByLibrary.simpleMessage("Datos"),
         "labelequa":
             MessageLookupByLibrary.simpleMessage("Ecuación cuadrática"),
         "labelfibona": MessageLookupByLibrary.simpleMessage("Fibonacci"),
         "labelforcebody":
             MessageLookupByLibrary.simpleMessage("Fuerza ejercida a un cuerpo"),
+        "labelmass": MessageLookupByLibrary.simpleMessage("Masa"),
         "labelmcdandmcm": MessageLookupByLibrary.simpleMessage("MCD y MCM"),
         "labelnamepers": MessageLookupByLibrary.simpleMessage("Nombre"),
         "labelnamepla":
@@ -48,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "labelnanatio": MessageLookupByLibrary.simpleMessage("Nacionalidad"),
         "labelparabolic":
             MessageLookupByLibrary.simpleMessage("Distancia tiro parabólico"),
+        "labelspeed": MessageLookupByLibrary.simpleMessage("Velocidad"),
         "labeluser": MessageLookupByLibrary.simpleMessage("Sesion"),
         "mat1": MessageLookupByLibrary.simpleMessage("Matemáticas"),
         "mat2": MessageLookupByLibrary.simpleMessage("Física"),

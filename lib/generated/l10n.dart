@@ -449,6 +449,96 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `A`
+  String get labela {
+    return Intl.message(
+      'A',
+      name: 'labela',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `B`
+  String get labelb {
+    return Intl.message(
+      'B',
+      name: 'labelb',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `C`
+  String get labelc {
+    return Intl.message(
+      'C',
+      name: 'labelc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Speed`
+  String get labelspeed {
+    return Intl.message(
+      'Speed',
+      name: 'labelspeed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Angle`
+  String get labelangle {
+    return Intl.message(
+      'Angle',
+      name: 'labelangle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Voltage`
+  String get labelVolt {
+    return Intl.message(
+      'Voltage',
+      name: 'labelVolt',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mass`
+  String get labelmass {
+    return Intl.message(
+      'Mass',
+      name: 'labelmass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Acceleration`
+  String get labelacce {
+    return Intl.message(
+      'Acceleration',
+      name: 'labelacce',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data`
+  String get labeldata {
+    return Intl.message(
+      'Data',
+      name: 'labeldata',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

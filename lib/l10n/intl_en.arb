@@ -38,5 +38,14 @@
     "labeladdres":"Url address",
     "labelnamepers":"Name",
     "labelnanatio":"Nationality",
-    "labelcontribu":"Contribution"
+    "labelcontribu":"Contribution",
+    "labela":"A",
+    "labelb":"B",
+    "labelc":"C",
+    "labelspeed":"Speed",
+    "labelangle":"Angle",
+    "labelVolt":"Voltage",
+    "labelmass":"Mass",
+    "labelacce":"Acceleration",
+    "labeldata":"Data"
 }
