@@ -48,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: (height * 20) / 100,
               ),
               Padding(
-                padding: EdgeInsets.all((width * 6) / 100),
+                padding: EdgeInsets.all((width * 4) / 100),
                 child: Container(
                   height: (height * 50) / 100,
                   width: width,
@@ -57,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       borderRadius: BorderRadius.all(Radius.circular(40))),
                   child: SingleChildScrollView(
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(5.0),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -89,9 +89,9 @@ class _LoginScreenState extends State<LoginScreen> {
                                       isChecked = value!;
                                     });
                                   }),
-                              const Text(
-                                'Acepto terminos y condiciones',
-                                style: TextStyle(
+                              Text(
+                                AppLocalizations.of(context).terms,
+                                style: const TextStyle(
                                   color: Colors.black,
                                   fontSize: 16,
                                 ),

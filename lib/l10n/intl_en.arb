@@ -30,5 +30,13 @@
     "resultaverage":"The average",
     "resultvariance":"The variance",
     "resultmode":"The statistical mode",
-    "data":"Entered data"
+    "data":"Entered data",
+    "terms":"I accept terms and conditions",
+    "menuopt1":"Places of interest",
+    "menuopt2":"Characters",
+    "labelnamepla":"Name of the site",
+    "labeladdres":"Url address",
+    "labelnamepers":"Name",
+    "labelnanatio":"Nationality",
+    "labelcontribu":"Contribution"
 }

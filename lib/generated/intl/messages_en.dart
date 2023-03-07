@@ -33,11 +33,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "inputuser": MessageLookupByLibrary.simpleMessage("Email"),
         "isEs": MessageLookupByLibrary.simpleMessage(" is: "),
         "labelIC": MessageLookupByLibrary.simpleMessage("Current intensity"),
+        "labeladdres": MessageLookupByLibrary.simpleMessage("Url address"),
+        "labelcontribu": MessageLookupByLibrary.simpleMessage("Contribution"),
         "labelequa": MessageLookupByLibrary.simpleMessage("Quadratic equation"),
         "labelfibona": MessageLookupByLibrary.simpleMessage("Fibonacci"),
         "labelforcebody":
             MessageLookupByLibrary.simpleMessage("Force exerted on a body"),
         "labelmcdandmcm": MessageLookupByLibrary.simpleMessage("MCD and MCM"),
+        "labelnamepers": MessageLookupByLibrary.simpleMessage("Name"),
+        "labelnamepla":
+            MessageLookupByLibrary.simpleMessage("Name of the site"),
+        "labelnanatio": MessageLookupByLibrary.simpleMessage("Nationality"),
         "labelparabolic":
             MessageLookupByLibrary.simpleMessage("Parabolic throw distance"),
         "labeluser": MessageLookupByLibrary.simpleMessage("Sesion"),
@@ -46,6 +52,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "mat3": MessageLookupByLibrary.simpleMessage("Statistics"),
         "menslogin": MessageLookupByLibrary.simpleMessage("Successful session"),
         "mensoption": MessageLookupByLibrary.simpleMessage("Options"),
+        "menuopt1": MessageLookupByLibrary.simpleMessage("Places of interest"),
+        "menuopt2": MessageLookupByLibrary.simpleMessage("Characters"),
         "resultIC":
             MessageLookupByLibrary.simpleMessage("Current intensity result"),
         "resultaverage": MessageLookupByLibrary.simpleMessage("The average"),
@@ -61,6 +69,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("The statistical mode"),
         "resultparaboli": MessageLookupByLibrary.simpleMessage(
             "Parabolic shot distance result"),
-        "resultvariance": MessageLookupByLibrary.simpleMessage("The variance")
+        "resultvariance": MessageLookupByLibrary.simpleMessage("The variance"),
+        "terms": MessageLookupByLibrary.simpleMessage(
+            "I accept terms and conditions")
       };
 }

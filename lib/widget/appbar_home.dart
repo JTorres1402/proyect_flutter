@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:taller/generated/l10n.dart';
+import 'package:taller/screen/screen.dart';
 
 class AppBarHome extends StatelessWidget with PreferredSizeWidget {
   final String text;
+
   @override
   final Size preferredSize;
   AppBarHome({Key? key, required this.text})
@@ -16,14 +18,44 @@ class AppBarHome extends StatelessWidget with PreferredSizeWidget {
           Text(text, style: const TextStyle(color: Colors.white, fontSize: 25)),
       backgroundColor: const Color(0xff1f005c),
       actions: [
-        IconButton(
-          icon: const Icon(Icons.more_vert_rounded),
-          tooltip: 'Option',
-          onPressed: () {
-            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                content: Text(AppLocalizations.of(context).mensoption)));
+        PopupMenuButton(
+          onSelected: (value) {
+            if (value == '1') {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const PlacesScreen(),
+                ),
+              );
+            } else {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const CharactesScreen(),
+                ),
+              );
+            }
           },
-        ),
+          itemBuilder: (context) {
+            return [
+              PopupMenuItem(
+                value: '1',
+                child: Text(AppLocalizations.of(context).menuopt1),
+              ),
+              PopupMenuItem(
+                value: '2',
+                child: Text(AppLocalizations.of(context).menuopt2),
+              ),
+            ];
+          },
+        )
+
+        // IconButton(
+        //   icon: const Icon(Icons.more_vert_rounded),
+        //   tooltip: 'Option',
+        //   onPressed: () {
+        //     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        //         content: Text(AppLocalizations.of(context).mensoption)));
+        //   },
+        // ),
       ],
       flexibleSpace: Container(
         decoration: const BoxDecoration(

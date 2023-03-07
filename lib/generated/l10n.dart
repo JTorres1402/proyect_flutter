@@ -369,6 +369,86 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `I accept terms and conditions`
+  String get terms {
+    return Intl.message(
+      'I accept terms and conditions',
+      name: 'terms',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Places of interest`
+  String get menuopt1 {
+    return Intl.message(
+      'Places of interest',
+      name: 'menuopt1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Characters`
+  String get menuopt2 {
+    return Intl.message(
+      'Characters',
+      name: 'menuopt2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name of the site`
+  String get labelnamepla {
+    return Intl.message(
+      'Name of the site',
+      name: 'labelnamepla',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Url address`
+  String get labeladdres {
+    return Intl.message(
+      'Url address',
+      name: 'labeladdres',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get labelnamepers {
+    return Intl.message(
+      'Name',
+      name: 'labelnamepers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nationality`
+  String get labelnanatio {
+    return Intl.message(
+      'Nationality',
+      name: 'labelnanatio',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contribution`
+  String get labelcontribu {
+    return Intl.message(
+      'Contribution',
+      name: 'labelcontribu',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

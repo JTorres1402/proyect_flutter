@@ -30,5 +30,13 @@
     "resultaverage":"La media",
     "resultvariance":"La varianza",
     "resultmode":"La moda",
-    "data":"Datos ingresados"
+    "data":"Datos ingresados",
+    "terms":"Acepto terminos y condiciones",
+    "menuopt1":"Sitios de interés",
+    "menuopt2":"Personajes",
+    "labelnamepla":"Nombre del sitio",
+    "labeladdres":"Direccion Url",
+    "labelnamepers":"Nombre",
+    "labelnanatio":"Nacionalidad",
+    "labelcontribu":"Contribución"
 }

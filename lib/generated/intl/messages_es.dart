@@ -34,12 +34,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "isEs": MessageLookupByLibrary.simpleMessage(" es: "),
         "labelIC":
             MessageLookupByLibrary.simpleMessage("Intensidad de corriente"),
+        "labeladdres": MessageLookupByLibrary.simpleMessage("Direccion Url"),
+        "labelcontribu": MessageLookupByLibrary.simpleMessage("Contribución"),
         "labelequa":
             MessageLookupByLibrary.simpleMessage("Ecuación cuadrática"),
         "labelfibona": MessageLookupByLibrary.simpleMessage("Fibonacci"),
         "labelforcebody":
             MessageLookupByLibrary.simpleMessage("Fuerza ejercida a un cuerpo"),
         "labelmcdandmcm": MessageLookupByLibrary.simpleMessage("MCD y MCM"),
+        "labelnamepers": MessageLookupByLibrary.simpleMessage("Nombre"),
+        "labelnamepla":
+            MessageLookupByLibrary.simpleMessage("Nombre del sitio"),
+        "labelnanatio": MessageLookupByLibrary.simpleMessage("Nacionalidad"),
         "labelparabolic":
             MessageLookupByLibrary.simpleMessage("Distancia tiro parabólico"),
         "labeluser": MessageLookupByLibrary.simpleMessage("Sesion"),
@@ -48,6 +54,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "mat3": MessageLookupByLibrary.simpleMessage("Estadística"),
         "menslogin": MessageLookupByLibrary.simpleMessage("Sesion exitosa"),
         "mensoption": MessageLookupByLibrary.simpleMessage("Opciones"),
+        "menuopt1": MessageLookupByLibrary.simpleMessage("Sitios de interés"),
+        "menuopt2": MessageLookupByLibrary.simpleMessage("Personajes"),
         "resultIC": MessageLookupByLibrary.simpleMessage(
             "Resultado de intensidad de corriente"),
         "resultaverage": MessageLookupByLibrary.simpleMessage("La media"),
@@ -62,6 +70,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "resultmode": MessageLookupByLibrary.simpleMessage("La moda"),
         "resultparaboli": MessageLookupByLibrary.simpleMessage(
             "Resultado de distancia tiro parabólico"),
-        "resultvariance": MessageLookupByLibrary.simpleMessage("La varianza")
+        "resultvariance": MessageLookupByLibrary.simpleMessage("La varianza"),
+        "terms": MessageLookupByLibrary.simpleMessage(
+            "Acepto terminos y condiciones")
       };
 }

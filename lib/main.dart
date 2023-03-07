@@ -32,6 +32,8 @@ class MyApp extends StatelessWidget {
         'math': (context) => const MathScreen(),
         'physi': (context) => const PhysiScreen(),
         'statis': (context) => const StatisScreen(),
+        '/places': (context) => const PlacesScreen(),
+        '/charactes': (context) => const CharactesScreen(),
       },
     );
   }

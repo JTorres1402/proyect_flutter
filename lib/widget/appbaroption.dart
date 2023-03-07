@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppBarOption extends StatelessWidget with PreferredSizeWidget {
   final String text;
+
   @override
   final Size preferredSize;
   AppBarOption({Key? key, required this.text})
@@ -10,18 +11,10 @@ class AppBarOption extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title:
-          Text(text, style: const TextStyle(color: Colors.white, fontSize: 19)),
-      actions: [
-        IconButton(
-          icon: const Icon(Icons.more_vert_rounded),
-          tooltip: 'Options',
-          onPressed: () {
-            ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('This is a snackbar')));
-          },
-        ),
-      ],
+      title: Text(
+        text,
+        style: const TextStyle(color: Colors.white, fontSize: 19),
+      ),
       backgroundColor: const Color(0xff1f005c),
       flexibleSpace: Container(
         decoration: const BoxDecoration(
